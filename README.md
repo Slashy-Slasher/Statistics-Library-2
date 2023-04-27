@@ -24,7 +24,7 @@ A library of statistics algorithms for final project
         Program that creates, salts and then smooths data Ocatves built in methods in Octave
 
 
-# Work that is not a Program
+# Non-Programs
 Contains things like the Research essays and documentation
    **Documentation essay**
       
