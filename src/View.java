@@ -27,14 +27,11 @@ public class View
     private JTextField GritField = new JTextField("");
     private JTextField WindowField = new JTextField("");
 
-
     private JLabel SalterText = new JLabel("(1)Salt (2)Grit = ");
     private JLabel WindowText = new JLabel("Window Size =  ");
 
-
     private JLabel OutputPrecursor = new JLabel("Formula = ");
     private JLabel OutputActual = new JLabel("");
-
 
     public String returnInputX()
     {
@@ -56,8 +53,6 @@ public class View
     {
         return this.GritField.getText();
     }
-
-
 
     /**
      * Used to display the graph
@@ -126,7 +121,6 @@ public class View
         f.add(WindowField);
         f.add(GritField);
 
-
         f.add(WindowText);
         f.add(OutputPrecursor);
         f.add(OutputActual);
@@ -136,6 +130,4 @@ public class View
         f.setVisible(true);    //making the frame visible
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-
-
 }

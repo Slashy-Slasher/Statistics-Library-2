@@ -8,11 +8,8 @@ import java.util.ArrayList;
 /**
  * @author Alexander Mortillite
  * @Date 4/14/2023
- *
  * This program is designed to intake two parameters from the user and create .csv files after performing various
  * actions to the graph created by the upper and lower bounds
- *
- *
  */
 public class SaltPlotSmoother
 {

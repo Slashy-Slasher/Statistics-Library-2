@@ -1,7 +1,6 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-
 /**
  * This class contains the action listeners for the View class
  */
@@ -60,8 +59,5 @@ public class Controller
                 Viewer.reInit();
             }
         });
-
-
     }
-
 }
