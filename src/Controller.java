@@ -3,7 +3,7 @@ import java.awt.event.ActionListener;
 
 public class Controller
 {
-    View view = new View();
+    View Viewer = new View();
 
     /**
      * Method that contains all the action listeners for the GUI
@@ -11,49 +11,49 @@ public class Controller
     public void manipulator()
     {
         SaltPlotSmootherAPI SpsA = new SaltPlotSmootherAPI();
-        view.display();
+        Viewer.display();
 
-        view.printCSV.addActionListener(new ActionListener() {
+        Viewer.PrintCSV.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
             {
                 System.out.println("created");
-                SpsA.standardCsv("Standard Quadratic API GUI.csv", Integer.parseInt(view.returnInputX()), 1+Integer.parseInt(view.returnInputZ()));
+                SpsA.standardCsv("Standard Quadratic API GUI.csv", Integer.parseInt(Viewer.returnInputX()), 1+Integer.parseInt(Viewer.returnInputZ()));
             }
         });
-        view.SaltCSVButton.addActionListener(new ActionListener() {
+        Viewer.SaltCSVButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
             {
                 System.out.println("Salted");
-                SpsA.saltCSV("Standard Quadratic API GUI.csv", "Quadratic GUI", Integer.parseInt(view.returnInputX()), 1+Integer.parseInt(view.returnInputZ()), Integer.parseInt(view.returnSaltValue()));
+                SpsA.saltCSV("Standard Quadratic API GUI.csv", "Quadratic GUI", Integer.parseInt(Viewer.returnInputX()), 1+Integer.parseInt(Viewer.returnInputZ()), Integer.parseInt(Viewer.returnSaltValue()));
 
             }
         });
-        view.SmoothCSVButton.addActionListener(new ActionListener() {
+        Viewer.SmoothCSVButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
             {
                 System.out.println("Smoothed");
-                SpsA.smoothCSV("Salted Quadratic GUI API.csv", "Quadratic GUI", Integer.parseInt(view.returnWindowValue()), Integer.parseInt(view.returnGritValue()),  Integer.parseInt(view.returnInputX()), 1+Integer.parseInt(view.returnInputZ()));
+                SpsA.smoothCSV("Salted Quadratic GUI API.csv", "Quadratic GUI", Integer.parseInt(Viewer.returnWindowValue()), Integer.parseInt(Viewer.returnGritValue()),  Integer.parseInt(Viewer.returnInputX()), 1+Integer.parseInt(Viewer.returnInputZ()));
 
             }
         });
-        view.GraphCSVButton.addActionListener(new ActionListener() {
+        Viewer.GraphCSVButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
             {
                 System.out.println("Graphed");
-                SpsA.frontEndTester( Integer.parseInt(view.returnInputX()), 1+Integer.parseInt(view.returnInputZ()),"Standard Quadratic API GUI.csv", "Salted Quadratic GUI API.csv", "Smoothed Quadratic GUI API.csv");
+                SpsA.frontEndTester( Integer.parseInt(Viewer.returnInputX()), 1+Integer.parseInt(Viewer.returnInputZ()),"Standard Quadratic API GUI.csv", "Salted Quadratic GUI API.csv", "Smoothed Quadratic GUI API.csv");
             }
         });
 
-        view.clearCSVButton.addActionListener(new ActionListener() {
+        Viewer.ClearCSVButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
             {
                 System.out.println("Cleared");
-                view.reInit();
+                Viewer.reInit();
             }
         });
 

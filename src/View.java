@@ -4,55 +4,59 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 
-
+/**
+ * View portion of the mvc that runs the GUI, this defines, initializes and displays the GUI
+ */
 public class View
 {
-    public AbstractButton printCSV = new JButton("Create");//creating instance of JButton;
+    public AbstractButton PrintCSV = new JButton("Create");//creating instance of JButton;
     public AbstractButton SaltCSVButton = new JButton("Salt");//creating instance of JButton;
     public AbstractButton SmoothCSVButton = new JButton("Smooth");//creating instance of JButton;
     public AbstractButton GraphCSVButton = new JButton("Graph");//creating instance of JButton;
-    public AbstractButton clearCSVButton = new JButton("clear");//creating instance of JButton;
+    public AbstractButton ClearCSVButton = new JButton("clear");//creating instance of JButton;
 
     private JFrame f = new JFrame();//creating instance of JFrame
 
-    private JLabel inputLabel = new JLabel("Enter a Range: ");
-    private JLabel formulaLabel = new JLabel("x^2 + x");
-    private JTextField inputTextX = new JTextField("");
-    private JTextField inputTextZ = new JTextField("");
+    private JLabel InputLabel = new JLabel("Enter a Range: ");
+    private JLabel FormulaLabel = new JLabel("x^2 + x");
+    private JTextField InputTextX = new JTextField("");
+    private JTextField InputTextZ = new JTextField("");
 
-    private JTextField salterField = new JTextField("");
-    private JTextField gritField = new JTextField("");
-    private JTextField windowField = new JTextField("");
-
-
-    private JLabel salterText = new JLabel("(1)Salt (2)Grit = ");
-    private JLabel windowText = new JLabel("Window Size =  ");
+    private JTextField SalterField = new JTextField("");
+    private JTextField GritField = new JTextField("");
+    private JTextField WindowField = new JTextField("");
 
 
-    private JLabel outputPrecursor = new JLabel("Formula = ");
-    private JLabel outputActual = new JLabel("");
+    private JLabel SalterText = new JLabel("(1)Salt (2)Grit = ");
+    private JLabel WindowText = new JLabel("Window Size =  ");
+
+
+    private JLabel OutputPrecursor = new JLabel("Formula = ");
+    private JLabel OutputActual = new JLabel("");
 
 
     public String returnInputX()
     {
-        return this.inputTextX.getText();
+        return this.InputTextX.getText();
     }
     public String returnInputZ()
     {
-        return this.inputTextZ.getText();
+        return this.InputTextZ.getText();
     }
     public String returnSaltValue()
     {
-        return this.salterField.getText();
+        return this.SalterField.getText();
     }
     public String returnWindowValue()
     {
-        return this.windowField.getText();
+        return this.WindowField.getText();
     }
     public String returnGritValue()
     {
-        return this.gritField.getText();
+        return this.GritField.getText();
     }
+
+
 
     /**
      * Used to display the graph
@@ -68,11 +72,11 @@ public class View
      */
     public void reInit()
     {
-        salterField.setText("");
-        gritField.setText("");
-        inputTextX.setText("");
-        inputTextZ.setText("");
-        windowField.setText("");
+        SalterField.setText("");
+        GritField.setText("");
+        InputTextX.setText("");
+        InputTextZ.setText("");
+        WindowField.setText("");
     }
 
     /**
@@ -81,24 +85,24 @@ public class View
     private void configureItems()
     {
         f.setTitle("MVC CSV");
-        printCSV.setBounds(130,100+80,200, 40);
+        PrintCSV.setBounds(130,100+80,200, 40);
         SaltCSVButton.setBounds(130,140+80,100, 40); //x axis, y axis, width, height
         SmoothCSVButton.setBounds(230,140+80,100, 40); //x axis, y axis, width, height
         GraphCSVButton.setBounds(130,200+80, 200, 40);
-        clearCSVButton.setBounds(130,240+80, 200, 40);
+        ClearCSVButton.setBounds(130,240+80, 200, 40);
 
-        inputTextX.setBounds(130,60,100, 40);
-        inputTextZ.setBounds(230,60,100, 40);
-        windowField.setBounds(130, 140, 100, 40);
-        salterField.setBounds(130, 100, 100, 40);
-        gritField.setBounds(230, 100, 100, 40);
+        InputTextX.setBounds(130,60,100, 40);
+        InputTextZ.setBounds(230,60,100, 40);
+        WindowField.setBounds(130, 140, 100, 40);
+        SalterField.setBounds(130, 100, 100, 40);
+        GritField.setBounds(230, 100, 100, 40);
 
-        windowText.setBounds(30, 140, 100, 40);
-        formulaLabel.setBounds(130,20,100, 40);
-        inputLabel.setBounds(30,60,100, 40);
-        salterText.setBounds(30, 100, 100, 40);
-        outputPrecursor.setBounds(60,20,100, 40);
-        outputActual.setBounds(130,200,100, 40);
+        WindowText.setBounds(30, 140, 100, 40);
+        FormulaLabel.setBounds(130,20,100, 40);
+        InputLabel.setBounds(30,60,100, 40);
+        SalterText.setBounds(30, 100, 100, 40);
+        OutputPrecursor.setBounds(60,20,100, 40);
+        OutputActual.setBounds(130,200,100, 40);
     }
 
     /**
@@ -109,26 +113,27 @@ public class View
         f.add(SmoothCSVButton);
         f.add(SaltCSVButton);
         f.add(GraphCSVButton);
-        f.add(clearCSVButton);
+        f.add(ClearCSVButton);
 
-        f.add(inputLabel);     //adding button in JFrame
-        f.add(formulaLabel);   //adding button in JFrame
-        f.add(inputTextX);
-        f.add(inputTextZ);
-        f.add(salterText);
+        f.add(InputLabel);     //adding button in JFrame
+        f.add(FormulaLabel);   //adding button in JFrame
+        f.add(InputTextX);
+        f.add(InputTextZ);
+        f.add(SalterText);
 
-        f.add(salterField);
-        f.add(windowField);
-        f.add(gritField);
+        f.add(SalterField);
+        f.add(WindowField);
+        f.add(GritField);
 
 
-        f.add(windowText);
-        f.add(outputPrecursor);
-        f.add(outputActual);
-        f.add(printCSV);
+        f.add(WindowText);
+        f.add(OutputPrecursor);
+        f.add(OutputActual);
+        f.add(PrintCSV);
         f.setSize(400,500);//400 width and 500 height
         f.setLayout(null);     //using no layout managers
         f.setVisible(true);    //making the frame visible
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 

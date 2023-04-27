@@ -77,8 +77,8 @@ public class Tester
      */
     public void startGUI()
     {
-        Controller controller = new Controller();
-        controller.manipulator();
+        Controller Control = new Controller();
+        Control.manipulator();
     }
 
 }
