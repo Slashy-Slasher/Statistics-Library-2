@@ -2,7 +2,7 @@
 Programs and documents for the Final Project
 
 
-# Statistics-Library-2
+# Programs
 A library of statistics algorithms for final project
    
   **StatsLibrary2:**
@@ -23,11 +23,14 @@ A library of statistics algorithms for final project
 
         Program that creates, salts and then smooths data Ocatves built in methods in Octave
 
+
+# Work that is not a Program
+Contains things like the Research essays and documentation
    **Documentation essay**
       
         Report that goes through my trials and tribulations as I made progress in this project
       
-   **Reasearch Project**
+   **Research Project**
         
         Report that goes through analytical analysis of Age of Empires 2: Defenitive Edition 1v1 data and examines and tries
         to detmine if the game is balanced
