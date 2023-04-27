@@ -15,7 +15,6 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
 public class SaltPlotSmoother
 {
     //f(y) = x^2+2x+1
@@ -25,8 +24,8 @@ public class SaltPlotSmoother
      * This demo class is a quick demonstration of what the code can do, it creates a .csv file using the formula,
      * salts the values, by converting that .csv back into an array, then adding the noise. Finally the graph Smoother
      * smooths the array and once again spits out a .csv file
-     * @param lowerBound
-     * @param UpperBound
+     * @param lowerBound lowerBound of the graph
+     * @param UpperBound upperBound of the graph
      */
     public void demo(int lowerBound, int UpperBound)
     {
@@ -37,8 +36,8 @@ public class SaltPlotSmoother
 
     /**
      * This method sets up a .csv of data-points of the quadratic formula, based on the two upper and lower bounds given
-     * @param lowerBound
-     * @param upperBound
+     * @param lowerBound    lowerBound of the graph
+     * @param upperBound    upperBound of the graph
      */
     public void createCSV(int lowerBound, int upperBound)
     {
@@ -65,10 +64,10 @@ public class SaltPlotSmoother
 
     /**
      *
-     * @param pathname
-     * @param lowerBound
-     * @param UpperBound
-     * @param x
+     * @param pathname      Location of the .csv to be salted
+     * @param lowerBound    lowerBound of the graph
+     * @param UpperBound    upperBound of the graph
+     * @param x             salting intensity value
      */
     public void saltCSV(String pathname, int lowerBound, int UpperBound, int x)
     {
@@ -94,17 +93,13 @@ public class SaltPlotSmoother
 
     /**
      * This method smooths the data in a given .csv file
-     * @param lowerBound
-     * @param UpperBound
-     * @param smoothingSteps
-     * @param grit
+     * @param lowerBound        lowerBound of the graph
+     * @param UpperBound        upperBound of the graph
+     * @param smoothingSteps    Size of the smoothing "Window"
+     * @param grit              Number of time the smoother will be run
      */
     public void graphSmoother(String pathname, int lowerBound, int UpperBound, int smoothingSteps, int grit)
     {
-        //Run through the X axis
-        //Take averages of the y coordinates
-        //Replace the y coordinates with the average of the surrounding
-        //parsing a CSV file into Scanner class constructor
         ArrayList<Double> cleanedList;
         ArrayList<Double> smoothedList = new ArrayList<>();
         cleanedList = SpsL.csvCleaner(pathname);

@@ -25,25 +25,24 @@ public class Tester
         //SaltPlotSmootherTest(-10, 10+1);
         //SaltPlotSmootherAPITest(-100, 100+1, 500, 2, 5);
         startGUI();
-
     }
 
     /**
      *  Test the StatsLibrary2 class and displays formatted text for the user to see
-     * @param upperCaseK
-     * @param k
-     * @param upperCaseN
-     * @param n
-     * @param lambda
-     * @param x
-     * @param constant
+     * @param upperCaseK input for K
+     * @param k          input for k
+     * @param upperCaseN input for N
+     * @param n          input for n
+     * @param lambda     input for lambda
+     * @param x          input for x
+     * @param constant   input for constant
      */
     public void testStatsLibrary2(int upperCaseK, int k, int upperCaseN, int n, double lambda, int x, double constant)
     {
         StatsLibrary2 Stats = new StatsLibrary2();
         System.out.printf("There is a probability of %.5f of %d successes within a population size of %d  \n",Stats.hyperGeometric(upperCaseK, k, upperCaseN, n), n, k);
         System.out.printf("There is a probability of %.5f of %.2f occurrences within the next %d time-units \n", Stats.poissonDistribution(lambda, x), lambda, x);
-        System.out.printf("There is a probability of %.5f of all data values will lie within %2.2f deviations of the mean\n", Stats.tchebysheffsTheorem(constant), constant);
+        System.out.printf("There is a probability of %.5f of all data values will lie within %2.2f deviations of the mean\n", Stats.chebysheffsTheorem(constant), constant);
     }
 
     /**
@@ -72,6 +71,10 @@ public class Tester
         SpsAPI.backEndTester(lowerBound, upperBound, saltIntensity, windowSize, grit);
         SpsAPI.frontEndTester(lowerBound, upperBound, "Standard Quadratic API.csv","Salted Quadratic API.csv","Smoothed Quadratic API.csv");
     }
+
+    /**
+     * Starts the GUI for the user
+     */
     public void startGUI()
     {
         Controller controller = new Controller();

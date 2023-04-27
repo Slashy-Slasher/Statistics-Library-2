@@ -1,4 +1,9 @@
-import javax.swing.*;
+import javax.swing.JLabel;
+import javax.swing.AbstractButton;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
 
 public class View
 {
@@ -9,8 +14,6 @@ public class View
     public AbstractButton clearCSVButton = new JButton("clear");//creating instance of JButton;
 
     private JFrame f = new JFrame();//creating instance of JFrame
-    //private JButton calculateButton = new JButton("Calculate");//creating instance of JButton
-    //private JButton printCSV = new JButton("Print to csv");//creating instance of JButton
 
     private JLabel inputLabel = new JLabel("Enter a Range: ");
     private JLabel formulaLabel = new JLabel("x^2 + x");
@@ -50,11 +53,19 @@ public class View
     {
         return this.gritField.getText();
     }
+
+    /**
+     * Used to display the graph
+     */
     public void display()
     {
         configureItems();
         addToDisplay();
     }
+
+    /**
+     * Method to quickly clear the data in all the input fields
+     */
     public void reInit()
     {
         salterField.setText("");
@@ -64,24 +75,23 @@ public class View
         windowField.setText("");
     }
 
-
+    /**
+     * Formatting of the GUI
+     */
     private void configureItems()
     {
         f.setTitle("MVC CSV");
-        //calculateButton.setBounds(230,100,100, 40); //x axis, y axis, width, height
         printCSV.setBounds(130,100+80,200, 40);
         SaltCSVButton.setBounds(130,140+80,100, 40); //x axis, y axis, width, height
         SmoothCSVButton.setBounds(230,140+80,100, 40); //x axis, y axis, width, height
         GraphCSVButton.setBounds(130,200+80, 200, 40);
         clearCSVButton.setBounds(130,240+80, 200, 40);
 
-
         inputTextX.setBounds(130,60,100, 40);
         inputTextZ.setBounds(230,60,100, 40);
         windowField.setBounds(130, 140, 100, 40);
         salterField.setBounds(130, 100, 100, 40);
         gritField.setBounds(230, 100, 100, 40);
-
 
         windowText.setBounds(30, 140, 100, 40);
         formulaLabel.setBounds(130,20,100, 40);
@@ -90,6 +100,10 @@ public class View
         outputPrecursor.setBounds(60,20,100, 40);
         outputActual.setBounds(130,200,100, 40);
     }
+
+    /**
+     * Adds all the items in configureItems() to the GUI and sets them to be visible
+     */
     private void addToDisplay()
     {
         f.add(SmoothCSVButton);
@@ -97,7 +111,6 @@ public class View
         f.add(GraphCSVButton);
         f.add(clearCSVButton);
 
-        //f.add(calculateButton);//adding button in JFram
         f.add(inputLabel);     //adding button in JFrame
         f.add(formulaLabel);   //adding button in JFrame
         f.add(inputTextX);

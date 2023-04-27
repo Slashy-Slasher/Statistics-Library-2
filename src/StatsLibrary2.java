@@ -1,23 +1,43 @@
 import java.math.BigInteger;
 public class StatsLibrary2
 {
+    /**
+     *
+     * @param K         input for K
+     * @param k         input for k
+     * @param N         input for N
+     * @param n         input for n
+     * @return          returns double containing answer
+     */
     public double hyperGeometric(int K, int k, int N, int n)
     {
-        StatsLibrary Statslib = new StatsLibrary();
-        BigInteger numerator =  Statslib.combination(K, k).multiply(Statslib.combination(N-K, n-k));
-        BigInteger denominator =  Statslib.combination(N, n);
+        StatsLibrary StatsLib = new StatsLibrary();
+        BigInteger numerator =  StatsLib.combination(K, k).multiply(StatsLib.combination(N-K, n-k));
+        BigInteger denominator =  StatsLib.combination(N, n);
 
         return numerator.doubleValue()/denominator.doubleValue();
     }
+
+    /**
+     *
+     * @param lambda    Input for Lambda
+     * @param y         Input for y
+     * @return          returns double containing answer
+     */
     public double poissonDistribution(double lambda, int y)
     {
-        StatsLibrary Statslib = new StatsLibrary();
+        StatsLibrary StatsLib = new StatsLibrary();
         BigInteger Y = BigInteger.valueOf(y);
-        return ((Math.pow(lambda, y) / Statslib.factorial(Y).doubleValue())*Math.pow(Math.E, -lambda));
+        return ((Math.pow(lambda, y) / StatsLib.factorial(Y).doubleValue())*Math.pow(Math.E, -lambda));
     }
-    public double tchebysheffsTheorem(double k)
+
+    /**
+     *
+     * @param k         Input for k
+     * @return          returns double containing answer
+     */
+    public double chebysheffsTheorem(double k)
     {
-        //1-(1/k^2)
         return (1-1/Math.pow(k, 2));
     }
 }

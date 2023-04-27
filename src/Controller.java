@@ -17,8 +17,7 @@ public class Controller
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                System.out.println("created" +Integer.parseInt(view.returnInputX()));
-                //model.createCSV(view.returnInputX(), view.returnInputZ());
+                System.out.println("created");
                 SpsA.standardCsv("Standard Quadratic API GUI.csv", Integer.parseInt(view.returnInputX()), 1+Integer.parseInt(view.returnInputZ()));
             }
         });
@@ -26,8 +25,7 @@ public class Controller
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                System.out.println("Salted: "+ Integer.parseInt(view.returnInputX()));
-
+                System.out.println("Salted");
                 SpsA.saltCSV("Standard Quadratic API GUI.csv", "Quadratic GUI", Integer.parseInt(view.returnInputX()), 1+Integer.parseInt(view.returnInputZ()), Integer.parseInt(view.returnSaltValue()));
 
             }
@@ -36,7 +34,7 @@ public class Controller
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                System.out.println("Smoothed" + Integer.parseInt(view.returnInputX()));
+                System.out.println("Smoothed");
                 SpsA.smoothCSV("Salted Quadratic GUI API.csv", "Quadratic GUI", Integer.parseInt(view.returnWindowValue()), Integer.parseInt(view.returnGritValue()),  Integer.parseInt(view.returnInputX()), 1+Integer.parseInt(view.returnInputZ()));
 
             }
