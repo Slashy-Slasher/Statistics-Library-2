@@ -58,3 +58,21 @@ Contains things like the Research essays and documentation
         
         My reformatted version of the data which contains various charts and calculations 
         used in the research project 
+
+
+# Dependencies
+All are included in the download
+
+   **Apache Commons Math 3.6.1**
+   
+         Used in SaltPlotSmooth API
+         
+   **JFreeChart 1.0.19**
+   
+         Used in SaltPlotSmooth API
+   
+   **Jcommon 1.0.23**
+   
+         Used as a dependency for JFreeChart
+   
+    
