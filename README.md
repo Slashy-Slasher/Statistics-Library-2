@@ -1,5 +1,5 @@
 # Statistics-Library-2
-Programs and documents for the Final Project
+Programs and documents for the Final Project by Alexander Mortillite
 
 
 # Programs
