@@ -17,7 +17,8 @@ A library of statistics algorithms for final project
      
    **SaltPlotSmootherAPI(JAVA):**
 
-        Program that creates, salts and then smooths data using my own methods and Apache Commons and JFreeChart
+        Program that creates, salts and then smooths data using my own methods
+        +Apache Commons and JFreeChart
         
    **SaltPlotSmootherLibrary(JAVA):**
 
@@ -40,8 +41,8 @@ Contains things like the Research essays and documentation
       
    **Research Project**
         
-        Report that goes through analytical analysis of Age of Empires 2: Defenitive Edition 1v1 data and examines and tries
-        to detmine if the game is balanced
+        Report that goes through analytical analysis of Age of Empires 2: Defenitive Edition 1v1 
+        data and examines and tries to detmine if the game is balanced
         
    **Formula Sheet**
 
@@ -49,7 +50,8 @@ Contains things like the Research essays and documentation
         
    **AOE2 Game Original:**
        
-        Original data as I recieved it from https://www.kaggle.com/datasets/nicoelbert/aoe-matchups?select=aoe_data.csv 
+        Original data as I recieved it from 
+        https://www.kaggle.com/datasets/nicoelbert/aoe-matchups?select=aoe_data.csv 
         
    **AOE2 Game Modified:**
         
