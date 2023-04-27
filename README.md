@@ -55,4 +55,5 @@ Contains things like the Research essays and documentation
         
    **AOE2 Game Modified:**
         
-        My reformatted version of the data which contains various charts and calculations used in the research project 
+        My reformatted version of the data which contains various charts and calculations 
+        used in the research project 
