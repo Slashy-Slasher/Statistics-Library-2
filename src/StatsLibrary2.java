@@ -1,7 +1,14 @@
 import java.math.BigInteger;
+
+/**
+ * @author Alexander Mortillite
+ * This is the StatsLibrary Class, it is used for rapidly solving different types of non-calculus based
+ * statistics problems, Featuring the Hyper Geometric Formula, Poisson Distribution and ChebySheff's Theorem
+ */
 public class StatsLibrary2
 {
     /**
+     *
      *
      * @param K         input for K
      * @param k         input for k

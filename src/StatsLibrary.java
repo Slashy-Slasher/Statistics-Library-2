@@ -1,5 +1,10 @@
 import java.math.BigInteger;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+
+/**
+ * Helper class for finding Combinations in StatsLib2
+ */
 public class StatsLibrary
 {
     /**

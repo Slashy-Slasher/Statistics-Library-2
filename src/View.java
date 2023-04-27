@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 
 /**
+ * @author Alexander Mortillite
  * View portion of the mvc that runs the GUI, this defines, initializes and displays the GUI
  */
 public class View

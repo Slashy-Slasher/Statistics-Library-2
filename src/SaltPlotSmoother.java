@@ -1,5 +1,10 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+//Sources:
 //https://www.w3schools.com/java/java_files_create.asp
 //https://www.javatpoint.com/how-to-read-csv-file-in-java
+
 /**
  * @author Alexander Mortillite
  * @Date 4/14/2023
@@ -9,12 +14,6 @@
  *
  *
  */
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
 public class SaltPlotSmoother
 {
     //f(y) = x^2+2x+1

@@ -1,3 +1,10 @@
+import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+//The JFreeCharts components are inside the SaltPlotSmootherLibrary class
+
+
 /**
  * USING APACHE COMMONS MATH 3.6.1 && JFREECHART- 1.0.19 && jcommon- 1.0.23
  *
@@ -5,12 +12,6 @@
  * @date 4/20/2023
  * @sources https://commons.apache.org/proper/commons-math/userguide/stat.html
  */
-
-import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-//The JFreeCharts components are inside the SaltPlotSmootherLibrary class
 public class SaltPlotSmootherAPI
 {
     /**

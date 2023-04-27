@@ -1,4 +1,5 @@
 /**
+ * This class is used to test the various functions of the project
  * @author Alexander
  * @date 4/25/23
  */

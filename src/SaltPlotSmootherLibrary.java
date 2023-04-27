@@ -14,6 +14,9 @@ import java.util.Scanner;
  * @author Alexander
  * @date 4/24/2023
  * @sources  https://zetcode.com/java/jfreechart/
+ *
+ * This class contains the various Methods used to Salt Plot and Smooth .CSV files
+ *
  */
 public class SaltPlotSmootherLibrary
 {
