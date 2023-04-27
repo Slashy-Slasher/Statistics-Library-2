@@ -11,15 +11,23 @@ A library of statistics algorithms for final project
         Poisson Distribution Solver
         Chebyshev's theorem Solver
     
-   **SaltPlotSmoother:**
+   **SaltPlotSmoother(JAVA):**
   
-        Program that creates, salts and then smooths data using my own methods and implementations in java
+        Program that creates, salts and then smooths data using my own methods and implementations
      
-   **SaltPlotSmootherAPI:**
+   **SaltPlotSmootherAPI(JAVA):**
 
-        Program that creates, salts and then smooths data using my own methods and Apache Commons and JFreeChart in java
+        Program that creates, salts and then smooths data using my own methods and Apache Commons and JFreeChart
+        
+   **SaltPlotSmootherLibrary(JAVA):**
 
-   **SaltPlotSmoother Octave:**
+        Class that contains various useful tools that I Use in my various java programs
+        
+   **View/Controller(JAVA):**
+
+        Classes that contain the code for creating and interacting with the GUI, Linked to SaltPlotSmootherAPI
+
+   **SaltPlotSmoother(Octave):**
 
         Program that creates, salts and then smooths data Ocatves built in methods in Octave
 
