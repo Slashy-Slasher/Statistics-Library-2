@@ -35,6 +35,7 @@ A library of statistics algorithms for final project
 
 # Non-Programs
 Contains things like the Research essays and documentation
+   
    **Documentation essay**
       
         Report that goes through my trials and tribulations as I made progress in this project
